@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 from pathlib import Path
 
-VERSION = '0.0.5'
+VERSION = '0.0.6'
 DESCRIPTION = 'Cartes.io official Python API wrapper'
 
 this_directory = Path(__file__).parent

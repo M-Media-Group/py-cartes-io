@@ -69,6 +69,12 @@ class Maps():
             self.request += '/{}'.format(marker_id)
         return self
 
+    def related(self):
+        # Get the markers
+        self.request = self.API_URL+'maps/{}/related'.format(
+            self.map_uuid)
+        return self
+
     def wait_for_limiter(self, method='GET'):
         min_time = (MIN_TIME_BETWEEN_REQUESTS if method ==
                     'GET' else MIN_TIME_BETWEEN_REQUESTS*3)

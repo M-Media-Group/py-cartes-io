@@ -42,7 +42,6 @@ cartes.Maps().page(2).get()
 ```python
 cartes.Maps('048eebe4-8dac-46e2-a947-50b6b8062fec').get()
 ```
-
 ### Get a maps markers
 
 ```python
@@ -76,4 +75,10 @@ cartes.Maps('048eebe4-8dac-46e2-a947-50b6b8062fec').markers().create(params)
 
 # you can also pass a map_token (or api_key) if your map settings require it
 cartes.Maps('048eebe4-8dac-46e2-a947-50b6b8062fec', map_token="xxx").markers().create(params)
+```
+
+### Get related maps for a specific map
+
+```python
+cartes.Maps('048eebe4-8dac-46e2-a947-50b6b8062fec').related().get()
 ```
